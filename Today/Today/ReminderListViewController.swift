@@ -46,6 +46,7 @@ class ReminderListViewController: UICollectionViewController {
         
         // 위 주석 코드와 동일 (간략화)
         snapshot.appendItems(Reminder.sampleData.map { $0.title })
+        dataSource.apply(snapshot)
         
     }
     
