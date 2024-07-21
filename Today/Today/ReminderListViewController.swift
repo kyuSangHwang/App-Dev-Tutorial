@@ -38,11 +38,14 @@ class ReminderListViewController: UICollectionViewController {
         
         var snapshot = Snapshot()
         snapshot.appendSections([0])
-        var reminderTitles = [String]()
-        for reminder in Reminder.sampleData {
-            reminderTitles.append(reminder.title)
-        }
-        snapshot.appendItems(reminderTitles)
+//        var reminderTitles = [String]()
+//        for reminder in Reminder.sampleData {
+//            reminderTitles.append(reminder.title)
+//        }
+//        snapshot.appendItems(reminderTitles)
+        
+        // 위 주석 코드와 동일 (간략화)
+        snapshot.appendItems(Reminder.sampleData.map { $0.title })
         
     }
     
