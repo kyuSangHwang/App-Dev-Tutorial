@@ -38,6 +38,11 @@ class ReminderListViewController: UICollectionViewController {
         
         var snapshot = Snapshot()
         snapshot.appendSections([0])
+        var reminderTitles = [String]()
+        for reminder in Reminder.sampleData {
+            reminderTitles.append(reminder.title)
+        }
+        snapshot.appendItems(reminderTitles)
         
     }
     
