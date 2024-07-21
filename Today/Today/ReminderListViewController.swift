@@ -19,6 +19,7 @@ class ReminderListViewController: UICollectionViewController {
             (cell: UICollectionViewListCell, indexPath: IndexPath, itemIdentifier: String) in
             let reminder = Reminder.sampleData[indexPath.item]
             var contentConfiguration = cell.defaultContentConfiguration()
+            contentConfiguration.text = reminder.title
         }
     }
 
