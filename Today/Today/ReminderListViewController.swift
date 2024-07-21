@@ -35,6 +35,9 @@ class ReminderListViewController: UICollectionViewController {
                                                                 for: indexPath,
                                                                 item: itemIdentifier)
         }
+        
+        var snapshot = Snapshot()
+        
     }
     
     private func listLayout() -> UICollectionViewCompositionalLayout {
