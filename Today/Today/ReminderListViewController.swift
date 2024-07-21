@@ -37,6 +37,7 @@ class ReminderListViewController: UICollectionViewController {
         }
         
         var snapshot = Snapshot()
+        snapshot.appendSections([0])
         
     }
     
